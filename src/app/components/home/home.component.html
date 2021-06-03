@@ -1,0 +1,21 @@
+<div class="container-fluid">
+    <div class="row mt-4">
+        <div class="col-12">
+            <h4>Top Headlines</h4>
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-md-3 mt-2" *ngFor="let t of topHeadingNews">
+            <div class="card">
+                <img src="{{t.urlToImage}}" class="card-img-top" alt="thumbnail">
+                <div class="card-body">
+                  <h5 class="card-title"> {{t.title}} </h5>
+                  <p class="card-text">{{t.publishedAt | date}} </p>
+                  <a href="{{t.url}}" class="btn btn-outline-dark">Read more</a>
+                </div>
+              </div>
+        </div>
+    </div>
+</div>
+
+<app-footer></app-footer>
