@@ -44,6 +44,7 @@ export class NewsService {
 
   getSearchNews(str:string): Observable<any>{
     this.searchApiUrl = "https://newsapi.org/v2/everything?q="+str+"&apiKey=9e9b7d1c2042476586e5d3584b6e7cab";
+    alert(this.searchApiUrl);
     return this.service.get(this.searchApiUrl);
   }
 

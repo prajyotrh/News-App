@@ -1,3 +1,5 @@
+import { SearchComponent } from './components/search/search.component';
+import { NavbarComponent } from './components/navbar/navbar.component';
 import { TechnologyComponent } from './components/technology/technology.component';
 import { SportComponent } from './components/sport/sport.component';
 import { EntertainmentComponent } from './components/entertainment/entertainment.component';
@@ -26,6 +28,10 @@ const routes: Routes = [
   {
     path:'technology',
     component:TechnologyComponent
+  },
+  {
+    path:'search',
+    component:SearchComponent
   }
 ];
 
